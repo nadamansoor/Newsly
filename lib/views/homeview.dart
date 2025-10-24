@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newsly/widgets/category_list_view.dart';
+import 'package:newsly/widgets/news_list_view.dart';
 
 class Homeview extends StatelessWidget {
   const Homeview({super.key});
@@ -35,7 +36,16 @@ class Homeview extends StatelessWidget {
           ),
         ),
       
-      body:CategoryListView(),
+      body:Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Column(
+            children: [
+              CategoryListView(),
+              SizedBox(height: 32,),
+              Expanded(child: NewsListView()),
+            ],
+          ),
+      ),
       ), 
     );
   }
