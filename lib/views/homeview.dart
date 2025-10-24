@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:newsly/widgets/category_card.dart';
+import 'package:newsly/widgets/category_list_view.dart';
 
 class Homeview extends StatelessWidget {
   const Homeview({super.key});
@@ -34,7 +34,8 @@ class Homeview extends StatelessWidget {
               )),
           ),
         ),
-      body:CategoryCard(),
+      
+      body:CategoryListView(),
       ), 
     );
   }
