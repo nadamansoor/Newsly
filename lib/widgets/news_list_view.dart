@@ -1,20 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:newsly/models/article_model.dart';
 import 'package:newsly/widgets/news_title.dart';
-
+// want to call getNews() once only  
 class NewsListView extends StatelessWidget {
-  const NewsListView({
-    super.key,
-  });
+    final List<ArticleModel> articles;
+
+
+    NewsListView({super.key, required this.articles,});
+
 
   @override
-  Widget build(BuildContext context) {
-    return  SliverList(
+  Widget build(BuildContext context)  {
+    return SliverList(
               delegate: SliverChildBuilderDelegate(
-                childCount: 10,
+                childCount: articles.length,
                 (context, index){
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 22),
-                    child: NewsTitle(),
+                    child: NewsTitle(
+                      articleModel: articles[index],
+                      
+                    ),
                   );
                 }));
   }

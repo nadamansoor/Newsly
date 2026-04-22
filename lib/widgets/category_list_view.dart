@@ -14,10 +14,10 @@ class CategoryListView extends StatelessWidget {
      CategoryModel(imageAssetUrl: 'assets/images/health.jpg', CategoryName: 'Health'),
      CategoryModel(imageAssetUrl: 'assets/images/science.jpg', CategoryName: 'Science'),
      CategoryModel(imageAssetUrl: 'assets/images/entertainment.jpg', CategoryName: 'Entertainment'),
-     CategoryModel(imageAssetUrl: 'assets/images/politics.jpg', CategoryName: 'Politics'),
-     CategoryModel(imageAssetUrl: 'assets/images/world.jpg', CategoryName: 'World'),
-     CategoryModel(imageAssetUrl: 'assets/images/education.jpg', CategoryName: 'Education'),
-     CategoryModel(imageAssetUrl: 'assets/images/lifestyle.jpg', CategoryName: 'Lifestyle'),
+    //  CategoryModel(imageAssetUrl: 'assets/images/politics.jpg', CategoryName: 'Politics'),
+    //  CategoryModel(imageAssetUrl: 'assets/images/world.jpg', CategoryName: 'World'),
+    //  CategoryModel(imageAssetUrl: 'assets/images/education.jpg', CategoryName: 'Education'),
+    //  CategoryModel(imageAssetUrl: 'assets/images/lifestyle.jpg', CategoryName: 'Lifestyle'),
   ];
 
   @override
